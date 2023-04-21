@@ -11,7 +11,7 @@
     <div class="modal-header">
         <h1 class="logo">
             <img class="logo-icon" src="icon.png" alt="Bug Weight"> Bug Weight
-        <span class="version">(1.0.3)</span>
+        <span class="version">(1.0.4)</span>
         </h1>
     </div>
 
@@ -20,23 +20,24 @@
         <h2>Массовость</h2>
         <select id="mass" data-action="calculate">
             <option value= 1>Единичная ошибка</option>
-            <option value= 3>Затрагивает большинство пользователей</option>
+            <option value= 3.5>Затрагивает много тестов</option>
         </select>
 
         <h2>Насколько блокирует</h2>
         <select id="block" data-action="calculate">
-            <option value= 1>Не блокирует</option>
-            <option value= 2>Блокирует, но есть обходное решение</option>
-            <option value= 3>Блокирует полностью</option>
+            <option value= 2>Не блокирует (падает при редком стечении обстоятельств)</option>
+            <option value= 3>Периодически замечаем (но не каждый прогон)</option>
+            <option value= 4>Блокирует (валит пайплайн каждый прогон)</option>
         </select>
 
-        <h2>Критичность области, в которой возникла ошибка</h2>
+        <h2>Критичность области, в которой флакует тест</h2>
         <select id="critical" data-action="calculate">
-            <option value= 1>Нормальная</option>
-            <option value= 3>Критичная</option>
+            <option value= 1>P2 и ниже</option>
+            <option value= 2>P1</option>
+            <option value= 3>P0</option>
         </select>
     </form>
-<div id="total" data-action="copyElement">1</div>
+<div id="total" data-action="copyElement">20</div>
 <p id="copyText">Click to Copy</p>
 
 <script src="popup.js"></script>

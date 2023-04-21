@@ -2,7 +2,7 @@ function funcCalc() {
     let mass = document.getElementById("mass").value;
     let block = document.getElementById("block").value;
     let critical = document.getElementById("critical").value;
-    document.getElementById("total").innerHTML = mass * block * critical
+    document.getElementById("total").innerHTML = mass * block * critical * 10
 }
 
 const inputElements = document.querySelectorAll('[data-action="calculate"]');
