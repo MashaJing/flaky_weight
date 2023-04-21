@@ -1,4 +1,4 @@
-# Bug Weight
+# Flaky Weight
 
 ## Установка для Google Chrome:
 1. Скачать репозиторий
